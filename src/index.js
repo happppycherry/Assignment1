@@ -110,10 +110,10 @@ function judgeWinner2() {
 }
 //announcewinner
 function announceWinner1() {
-  alert("Player1won!");
+  alert("Player 1 won!");
 }
 function announceWinner2() {
-  alert("Player2won!");
+  alert("Player 2 won!");
 }
 
 //set or switch player
