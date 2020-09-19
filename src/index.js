@@ -35,11 +35,13 @@ function checkCell(event) {
   if (filledCells1.indexOf(id) >= 0 || filledCells2.indexOf(id) >= 0) {
   } else {
     if (player === 1) {
-      document.getElementById(id).innerText = "O";
+      document.getElementById(id).innerText = "x";
+      document.getElementById(id).classList.add("player1Checked");
       filledCells1.push(id);
       judgeWinner1();
     } else {
-      document.getElementById(id).innerText = "X";
+      document.getElementById(id).innerText = "o";
+      document.getElementById(id).classList.add("player2Checked");
       filledCells2.push(id);
       judgeWinner2();
     }

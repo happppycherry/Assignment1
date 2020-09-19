@@ -1,5 +1,7 @@
 body {
   font-family: sans-serif;
+  font: ‘Helvetica';
+  font-size: 30px;
 }
 table,
 th,
@@ -8,10 +10,18 @@ td {
   border-collapse: collapse;
 }
 td {
-  height: 50px;
-  width: 50px;
+  height: 60px;
+  width: 60px;
+  text-align: center;
+  vertical-align: middle;
 }
 #reset {
   border-width: 1px solid black;
   font-style: bold;
+}
+.player1Checked {
+  background-color: rgb(124, 252, 0);
+}
+.player2Checked {
+  background-color: rgb(250, 128, 114);
 }
