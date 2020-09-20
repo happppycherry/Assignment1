@@ -25,3 +25,7 @@ td {
 .player2Checked {
   background-color: rgb(250, 128, 114);
 }
+#progressBar {
+  height: 24px;
+  background-color: lightgray;
+}

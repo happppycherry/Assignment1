@@ -30,6 +30,7 @@ let filledCells2 = [];
 
 //learve o or x mark on the cell
 function checkCell(event) {
+  progressBar();
   let id = event.target.id;
   //check if the cell is vacant
   if (filledCells1.indexOf(id) >= 0 || filledCells2.indexOf(id) >= 0) {
@@ -117,7 +118,7 @@ function announceWinner2() {
 }
 
 //set or switch player
-function setNextPlayer(evt) {
+function setNextPlayer() {
   if (player === 1) {
     player = 2;
   } else {
@@ -138,6 +139,25 @@ function reset() {
   let cells = board.getElementsByTagName("td");
   for (let i = 0; i < cells.length; i++) {
     cells[i].innerText = "";
+    cells[i].removeAttribute("class");
   }
 }
 document.getElementById("reset").addEventListener("click", reset);
+
+// progress bar
+let intervalId;
+function progressBar() {
+  clearInterval(intervalId);
+  let bar = document.getElementById("progressBar");
+  let width = 1;
+  intervalId = setInterval(frame, 100);
+  function frame() {
+    if (width >= 100) {
+      clearInterval(intervalId);
+      setNextPlayer();
+    } else {
+      width++;
+      bar.style.width = width + "%";
+    }
+  }
+}
