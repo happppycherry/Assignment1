@@ -1,8 +1,3 @@
-body {
-  font-family: sans-serif;
-  font: ‘Helvetica';
-  font-size: 30px;
-}
 table,
 th,
 td {
@@ -14,6 +9,8 @@ td {
   width: 60px;
   text-align: center;
   vertical-align: middle;
+  font-family: Helvetica;
+  font-size: 30px;
 }
 #reset {
   border-width: 1px solid black;
