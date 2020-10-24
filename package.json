@@ -1,4 +1,4 @@
-"scripts": {"start": "./node_modules/parcel-bundler/bin/cli.js index.html --port 8080","build": "parcel build index.html"},
+{"start": "./node_modules/parcel-bundler/bin/cli.js index.html --port 8080","build": "parcel build index.html"},
 
 {
   "name": "assignment-1",
